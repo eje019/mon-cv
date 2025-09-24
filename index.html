@@ -1,15 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - N'DAYAKE Essowe Jean-Paul</title>
+    <style>
+      /* ======= RESET ======= */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DMon CV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+      body {
+        background: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+      }
 
-<body>
+      .cv-container {
+        max-width: 900px;
+        background: #fff;
+        margin: auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
 
-</body>
+      header {
+        text-align: center;
+        margin-bottom: 25px;
+      }
 
+      header h1 {
+        font-size: 2rem;
+        color: #c0392b;
+        margin-bottom: 8px;
+      }
+
+      header p {
+        color: #555;
+      }
+
+      .section {
+        margin-bottom: 25px;
+      }
+
+      .section h2 {
+        color: #c0392b;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #c0392b;
+        padding-bottom: 5px;
+        font-size: 1.4rem;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      ul li {
+        margin-bottom: 8px;
+      }
+
+      .contact {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+      }
+
+      .contact a {
+        text-decoration: none;
+        color: #c0392b;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .contact a:hover {
+        color: #e74c3c;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 1.6rem;
+        }
+        .section h2 {
+          font-size: 1.2rem;
+        }
+      }
+
+      /* Bouton imprimer */
+      #print-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background: #c0392b;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      #print-btn:hover {
+        background: #e74c3c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-container">
+      <header>
+        <h1>N'DAYAKE Essowe Jean-Paul</h1>
+        <p>Étudiant en Informatique (Architecture Logicielle) – ESGIS</p>
+        <div class="contact">
+          <a href="mailto:jndayake@gmail.com">jndayake@gmail.com</a>
+          <a href="tel:+2290151049095">+229 0151049095</a>
+          <a href="https://facebook-like-site.onrender.com/" target="_blank"
+            >Portfolio</a
+          >
+        </div>
+      </header>
+
+      <section class="section">
+        <h2>Objectif</h2>
+        <p>
+          Étudiant motivé en fin de 2ème année d'informatique recherchant un
+          stage pour appliquer mes compétences en développement web, logiciel et
+          administration système. Passionné par l’optimisation de code et la
+          résolution de problèmes techniques.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Compétences</h2>
+        <ul>
+          <li>
+            Apprentissage rapide de nouveaux langages (Java, C, Python) et
+            frameworks
+          </li>
+          <li>
+            Pratique de Linux, bases en virtualisation (Docker) et réseaux
+            (CCNA1)
+          </li>
+          <li>
+            Expérience en gestion de versions (Git) sur projets universitaires
+          </li>
+          <li>
+            Maintenance hardware & maîtrise des outils bureautiques avancés
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Expériences Professionnelles</h2>
+        <ul>
+          <li>
+            <strong>Projet Universitaire (PHP/MySQL) | ESGIS | 2023 :</strong>
+            Développement d'une application web avec authentification sécurisée
+            et gestion complète (copie de Facebook). Collaboration en
+            méthodologie agile.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Formations</h2>
+        <ul>
+          <li>
+            <strong>Licence 2 Informatique (Architecture Logicielle)</strong> –
+            ESGIS | 2022 - Présent<br />
+            - Programmation avancée (Java/C)<br />
+            - Bases de données (SQL, UML)<br />
+            - Réseaux (CCNA1) et sécurité<br />
+            - TP notables : optimisation d'algorithmes en C, création de jeux
+            Java (Échecs, Pac-Man), simulation réseau Cisco Packet Tracer.
+          </li>
+          <li>
+            <strong>Baccalauréat 2023</strong> – Collège Les Elites, Natitingou
+            (Bénin)
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Expérience de Bénévolat</h2>
+        <ul>
+          <li>
+            Membre actif du Club Informatique – ESGIS : Organisation d’ateliers
+            d’initiation à HTML/CSS/JS pour 15+ débutants.
+          </li>
+        </ul>
+      </section>
+
+      <button id="print-btn">Imprimer le CV</button>
+    </div>
+
+    <script>
+      // Imprimer la page
+      document.getElementById("print-btn").addEventListener("click", () => {
+        window.print();
+      });
+    </script>
+  </body>
 </html>
